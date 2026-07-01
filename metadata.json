@@ -1,0 +1,6 @@
+{
+  "name": "Dorama Landing Page",
+  "description": "Página de alta conversão para dorama (novela coreana) com player controlado por tempo e oferta irresistível.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
