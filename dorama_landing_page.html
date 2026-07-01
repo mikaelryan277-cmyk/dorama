@@ -3,7 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Série Especial - Dorama</title>
+    <title>Seu marido por contrato é seu chefe.</title>
+    <meta name="description" content="Ele mandou ela ficar longe... mas foi o primeiro a enlouquecer de ciúmes." />
+    <meta property="og:title" content="Seu marido por contrato é seu chefe." />
+    <meta property="og:description" content="Ele mandou ela ficar longe... mas foi o primeiro a enlouquecer de ciúmes." />
+    <meta property="og:type" content="website" />
+    
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1833545720703515');
+      fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -54,6 +74,11 @@
     </style>
 </head>
 <body class="font-sans antialiased overflow-x-hidden min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center px-4 py-8 md:py-16">
+    <!-- Meta Pixel NoScript -->
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1833545720703515&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel NoScript -->
     
     <!-- Background Ambient Glows -->
     <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-rose-950/20 blur-[120px] pointer-events-none -z-10"></div>
@@ -114,10 +139,10 @@
             <!-- Overlaid Watermark (Indicates play) -->
             <div id="playWatermark" class="absolute inset-0 flex items-center justify-center bg-black/20 pointer-events-none transition-opacity duration-300 z-10"></div>
 
-            <!-- Dark Paywall Overlay -->
+            <!-- Translucent Paywall Overlay -->
             <div 
                 id="paywallOverlay" 
-                class="absolute inset-0 bg-gradient-to-t from-black via-black/98 to-black/95 flex flex-col justify-center items-center p-6 text-center z-30 transition-all duration-500 opacity-0 pointer-events-none"
+                class="absolute inset-0 bg-black/60 backdrop-blur-sm flex flex-col justify-center items-center p-6 text-center z-30 transition-all duration-500 opacity-0 pointer-events-none"
             >
                 <!-- Lock Icon Decoration -->
                 <div class="w-16 h-16 rounded-full bg-rose-950/50 border border-rose-500/30 flex items-center justify-center text-rose-500 mb-5 animate-bounce">
@@ -129,28 +154,26 @@
                 <h3 class="font-serif text-xl md:text-2xl lg:text-3xl font-bold text-[#D4AF37] mb-2 tracking-tight">
                     O clima esquentou... e agora?
                 </h3>
-                <p class="text-gray-300 text-xs md:text-sm max-w-[420px] mb-6 leading-relaxed">
+                <p class="text-gray-300 text-xs md:text-sm max-w-[420px] leading-relaxed">
                     Ele não vai deixar ela ir embora tão fácil. Descubra agora o desfecho dessa história apaixonante.
                 </p>
-
-                <!-- Call to Action (CTA) Button -->
-                <a 
-                    href="https://checkout.gg/dorama-secreto" 
-                    target="_blank"
-                    class="inline-flex items-center justify-center w-full max-w-[380px] px-8 py-4.5 rounded-full text-white font-extrabold text-sm md:text-base bg-[#B91C1C] hover:bg-red-700 transition duration-300 text-center animate-pulse-subtle border border-red-500/30 shadow-lg tracking-wide transform hover:-translate-y-0.5 active:translate-y-0"
-                >
-                    Quero ver o que aconteceu | R$14,90
-                </a>
-
-                <!-- Offer Comparison Section -->
-                <div class="mt-8 text-center space-y-3 font-sans w-full">
-                    <div class="flex flex-col sm:flex-row items-center justify-center gap-3 text-xs">
-                        <span class="text-gray-400 border border-white/10 px-3 py-1.5 rounded w-full sm:w-auto">🎬 Só esse dorama — R$14,90</span>
-                        <span class="text-[#D4AF37] border border-[#D4AF37]/30 px-3 py-1.5 rounded bg-[#D4AF37]/5 font-semibold w-full sm:w-auto">🔥 Esse + 4 doramas bônus — R$27,90</span>
-                    </div>
-                    <p class="text-[10px] text-gray-500 uppercase tracking-widest">Acesso vitalício imediato via e-mail</p>
-                </div>
             </div>
+        </div>
+
+        <!-- CTA Section Below Player -->
+        <div 
+            id="ctaBelowPlayer" 
+            class="w-full flex flex-col items-center justify-center transition-all duration-500 max-h-0 opacity-0 pointer-events-none overflow-hidden"
+        >
+            <a 
+                href="https://ggcheckout.app/checkout/v4/smX7xGQcZND4yx7t6s9N" 
+                target="_blank"
+                onclick="handleCheckoutClick()"
+                class="inline-flex items-center justify-center w-full max-w-[380px] px-8 py-4.5 rounded-full text-white font-extrabold text-sm md:text-base bg-[#B91C1C] hover:bg-red-700 transition duration-300 text-center animate-pulse-subtle border border-red-500/30 shadow-lg tracking-wide transform hover:-translate-y-0.5 active:translate-y-0"
+            >
+                Quero ver o que aconteceu — R$14,90
+            </a>
+            <p class="text-[10px] text-gray-500 uppercase tracking-widest mt-3 text-center mb-6">Acesso vitalício imediato via e-mail</p>
         </div>
 
         <!-- Safe Footer Details -->
@@ -166,8 +189,8 @@
           </div>
           <div class="h-8 w-px bg-white/20"></div>
           <div class="flex flex-col items-center">
-            <span class="text-lg md:text-xl font-serif italic text-white font-bold">+12k</span>
-            <span class="text-[10px] uppercase tracking-tighter font-sans text-gray-400">Assistindo</span>
+            <span class="text-lg md:text-xl font-serif italic text-white font-bold">1247</span>
+            <span class="text-[10px] uppercase tracking-tighter font-sans text-gray-400">pessoas estão assistindo</span>
           </div>
           <div class="h-8 w-px bg-white/20"></div>
           <div class="flex flex-col items-center">
@@ -188,7 +211,7 @@
         const progressBar = document.getElementById('progressBar');
         const playOverlay = document.getElementById('playOverlay');
         
-        const PAUSE_TIME = 594; // segundos para pausar o vídeo (9:54)
+        const PAUSE_TIME = 183; // segundos para pausar o vídeo (3:03)
 
         // Carrega API do YouTube de forma assíncrona
         const tag = document.createElement('script');
@@ -219,7 +242,7 @@
         }
 
         function onPlayerReady(event) {
-            const hasSeen = localStorage.getItem('dorama_viu_gancho');
+            const hasSeen = localStorage.getItem('dorama_viu_gancho_183');
             if (hasSeen === 'true') {
                 showPaywallDirectly();
             } else {
@@ -252,7 +275,7 @@
                 if (current >= PAUSE_TIME) {
                     playerInstance.pauseVideo();
                     playerInstance.seekTo(PAUSE_TIME, true);
-                    localStorage.setItem('dorama_viu_gancho', 'true');
+                    localStorage.setItem('dorama_viu_gancho_183', 'true');
                     showPaywallDirectly();
                 }
             }
@@ -263,9 +286,22 @@
             paywall.classList.add('opacity-100');
             unmuteBtn.style.display = 'none';
             playOverlay.style.display = 'none';
+            
+            const ctaBelow = document.getElementById('ctaBelowPlayer');
+            if (ctaBelow) {
+                ctaBelow.classList.remove('max-h-0', 'opacity-0', 'pointer-events-none');
+                ctaBelow.classList.add('max-h-[200px]', 'opacity-100', 'pointer-events-auto', 'mb-6');
+            }
+
             if (playerInstance && typeof playerInstance.pauseVideo === 'function') {
                 playerInstance.pauseVideo();
                 playerInstance.seekTo(PAUSE_TIME, true);
+            }
+        }
+
+        function handleCheckoutClick() {
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout');
             }
         }
 

@@ -44,7 +44,7 @@ export default function App() {
   const [customVideoUrl, setCustomVideoUrl] = useState(
     "https://youtu.be/s4fnePxwFKA"
   );
-  const [pauseTime, setPauseTime] = useState(594); // 9:54 = 594 seconds
+  const [pauseTime, setPauseTime] = useState(183); // 3:03 = 183 seconds
   const [isTestMode, setIsTestMode] = useState(false);
   const [offer1, setOffer1] = useState("Quero ver o que aconteceu — R$14,90");
   const [offer2, setOffer2] = useState("");
@@ -78,7 +78,7 @@ export default function App() {
 
   // Check LocalStorage on Mount
   useEffect(() => {
-    const hasSeen = localStorage.getItem('dorama_viu_gancho');
+    const hasSeen = localStorage.getItem('dorama_viu_gancho_183');
     if (hasSeen === 'true') {
       setIsReturningUser(true);
       setShowOverlay(true);
@@ -218,7 +218,7 @@ export default function App() {
               ytPlayerRef.current.pauseVideo();
               ytPlayerRef.current.seekTo(activePauseTime, true);
               setShowOverlay(true);
-              localStorage.setItem('dorama_viu_gancho', 'true');
+              localStorage.setItem('dorama_viu_gancho_183', 'true');
               setIsReturningUser(true);
               setIsPlaying(false);
             }
@@ -241,7 +241,7 @@ export default function App() {
       videoRef.current.pause();
       videoRef.current.currentTime = activePauseTime;
       setShowOverlay(true);
-      localStorage.setItem('dorama_viu_gancho', 'true');
+      localStorage.setItem('dorama_viu_gancho_183', 'true');
       setIsReturningUser(true);
     }
   };
@@ -313,7 +313,7 @@ export default function App() {
 
   // Reset Storage / Simulated Visita
   const handleResetStorage = () => {
-    localStorage.removeItem('dorama_viu_gancho');
+    localStorage.removeItem('dorama_viu_gancho_183');
     setIsReturningUser(false);
     setShowOverlay(false);
     setVideoError(null);
@@ -448,7 +448,7 @@ export default function App() {
         }
 
         function onPlayerReady(event) {
-            const hasSeen = localStorage.getItem('dorama_viu_gancho');
+            const hasSeen = localStorage.getItem('dorama_viu_gancho_183');
             if (hasSeen === 'true') {
                 showPaywallDirectly();
             } else {
@@ -481,7 +481,7 @@ export default function App() {
                 if (current >= PAUSE_TIME) {
                     playerInstance.pauseVideo();
                     playerInstance.seekTo(PAUSE_TIME, true);
-                    localStorage.setItem('dorama_viu_gancho', 'true');
+                    localStorage.setItem('dorama_viu_gancho_183', 'true');
                     showPaywallDirectly();
                 }
             }
@@ -550,7 +550,7 @@ export default function App() {
         const PAUSE_TIME = ${pauseTime}; // segundos para pausar o vídeo
 
         function initLanding() {
-            const hasSeen = localStorage.getItem('dorama_viu_gancho');
+            const hasSeen = localStorage.getItem('dorama_viu_gancho_183');
             if (hasSeen === 'true') {
                 showPaywallDirectly();
             } else {
@@ -614,7 +614,7 @@ export default function App() {
                 if (current >= PAUSE_TIME) {
                     player.pause();
                     player.currentTime = PAUSE_TIME;
-                    localStorage.setItem('dorama_viu_gancho', 'true');
+                    localStorage.setItem('dorama_viu_gancho_183', 'true');
                     showPaywallDirectly();
                 }
             });
