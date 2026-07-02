@@ -46,7 +46,7 @@ export default function App() {
   );
   const [pauseTime, setPauseTime] = useState(183); // 3:03 = 183 seconds
   const [isTestMode, setIsTestMode] = useState(false);
-  const [offer1, setOffer1] = useState("Quero ver o que aconteceu — R$14,90");
+  const [offer1, setOffer1] = useState("Ver o final agora");
   const [offer2, setOffer2] = useState("");
 
   // Operational States
@@ -800,7 +800,7 @@ export default function App() {
                     O clima esquentou... e agora?
                 </h3>
                 <p class="text-gray-300 text-xs md:text-sm max-w-[420px] leading-relaxed">
-                    Ele não vai deixar ela ir embora tão fácil. Descubra agora o desfecho dessa história apaixonante.
+                    Ele não vai deixar ela ir embora assim. O que vem depois vai te prender do início ao fim.
                 </p>
             </div>
         </div>
@@ -1241,7 +1241,7 @@ export default function App() {
             </h3>
             
             <p className="text-gray-300 text-xs md:text-sm max-w-[420px] leading-relaxed">
-              Ele não vai deixar ela ir embora tão fácil. Descubra agora o desfecho dessa história apaixonante.
+              Ele não vai deixar ela ir embora assim. O que vem depois vai te prender do início ao fim.
             </p>
           </div>
         </div>
