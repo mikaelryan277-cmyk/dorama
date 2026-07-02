@@ -805,10 +805,22 @@ export default function App() {
             </div>
         </div>
 
+        <!-- Fixed CTA (Visible from the start) -->
+        <div id="ctaFixed" class="w-full flex flex-col items-center justify-center mt-6 z-20">
+            <a 
+                href="\${checkoutUrl}" 
+                target="_blank"
+                onclick="handleCheckoutClick()"
+                class="inline-flex items-center justify-center w-full max-w-[380px] px-8 py-4.5 rounded-full text-white font-extrabold text-sm md:text-base bg-[#B91C1C] hover:bg-red-700 transition duration-300 text-center animate-pulse-subtle border border-red-500/30 shadow-lg tracking-wide transform hover:-translate-y-0.5 active:translate-y-0"
+            >
+                Quero ver o filme completo agora
+            </a>
+        </div>
+
         <!-- CTA Section Below Player (Dynamically revealed when paused) -->
         <div 
             id="ctaBelowPlayer" 
-            class="w-full flex flex-col items-center justify-center transition-all duration-500 max-h-0 opacity-0 pointer-events-none overflow-hidden"
+            class="w-full flex flex-col items-center justify-center transition-all duration-500 max-h-0 opacity-0 pointer-events-none overflow-hidden mt-4"
         >
             <a 
                 href="\${checkoutUrl}" 
@@ -1244,6 +1256,23 @@ export default function App() {
               Quem para aqui nunca descobre o que aconteceu com Susu. Você vai deixar assim?
             </p>
           </div>
+        </div>
+
+        {/* Fixed CTA (Visible from the start) */}
+        <div className="w-full flex flex-col items-center justify-center mt-6">
+          <a 
+            href={checkoutUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => {
+              if (typeof (window as any).fbq === 'function') {
+                (window as any).fbq('track', 'InitiateCheckout');
+              }
+            }}
+            className="inline-flex items-center justify-center w-full max-w-[380px] px-8 py-4.5 rounded-full text-white font-extrabold text-sm md:text-base bg-[#B91C1C] hover:bg-red-700 transition duration-300 text-center animate-pulse-subtle border border-red-500/30 shadow-lg tracking-wide transform hover:-translate-y-0.5 active:translate-y-0"
+          >
+            <span>Quero ver o filme completo agora</span>
+          </a>
         </div>
 
         {/* Dynamic CTA Below Player in React */}
