@@ -301,6 +301,11 @@
             unmuteBtn.style.display = 'none';
             playOverlay.style.display = 'none';
             
+            const ctaFixed = document.getElementById('ctaFixed');
+            if (ctaFixed) {
+                ctaFixed.style.display = 'none';
+            }
+            
             const ctaBelow = document.getElementById('ctaBelowPlayer');
             if (ctaBelow) {
                 ctaBelow.classList.remove('max-h-0', 'opacity-0', 'pointer-events-none');

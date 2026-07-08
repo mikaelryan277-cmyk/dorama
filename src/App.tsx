@@ -493,6 +493,11 @@ export default function App() {
             unmuteBtn.style.display = 'none';
             playOverlay.style.display = 'none';
             
+            const ctaFixed = document.getElementById('ctaFixed');
+            if (ctaFixed) {
+                ctaFixed.style.display = 'none';
+            }
+            
             const ctaBelow = document.getElementById('ctaBelowPlayer');
             if (ctaBelow) {
                 ctaBelow.classList.remove('max-h-0', 'opacity-0', 'pointer-events-none');
@@ -579,6 +584,11 @@ export default function App() {
             paywall.classList.add('opacity-100');
             unmuteBtn.style.display = 'none';
             playOverlay.style.display = 'none';
+            
+            const ctaFixed = document.getElementById('ctaFixed');
+            if (ctaFixed) {
+                ctaFixed.style.display = 'none';
+            }
             
             const ctaBelow = document.getElementById('ctaBelowPlayer');
             if (ctaBelow) {
@@ -1261,7 +1271,7 @@ export default function App() {
         </div>
 
         {/* Fixed CTA (Visible from the start) */}
-        <div className="w-full flex flex-col items-center justify-center mt-6">
+        <div className={`w-full flex flex-col items-center justify-center mt-6 ${showOverlay ? 'hidden' : ''}`}>
           <a 
             href={checkoutUrl}
             target="_blank"
