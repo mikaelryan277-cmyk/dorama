@@ -496,7 +496,7 @@ export default function App() {
             const ctaBelow = document.getElementById('ctaBelowPlayer');
             if (ctaBelow) {
                 ctaBelow.classList.remove('max-h-0', 'opacity-0', 'pointer-events-none');
-                ctaBelow.classList.add('max-h-[200px]', 'opacity-100', 'pointer-events-auto', 'mb-6');
+                ctaBelow.classList.add('max-h-[250px]', 'opacity-100', 'pointer-events-auto', 'mb-6');
             }
 
             if (playerInstance && typeof playerInstance.pauseVideo === 'function') {
@@ -583,7 +583,7 @@ export default function App() {
             const ctaBelow = document.getElementById('ctaBelowPlayer');
             if (ctaBelow) {
                 ctaBelow.classList.remove('max-h-0', 'opacity-0', 'pointer-events-none');
-                ctaBelow.classList.add('max-h-[200px]', 'opacity-100', 'pointer-events-auto', 'mb-6');
+                ctaBelow.classList.add('max-h-[250px]', 'opacity-100', 'pointer-events-auto', 'mb-6');
             }
 
             player.pause();
@@ -815,6 +815,7 @@ export default function App() {
             >
                 Quero ver o filme completo agora
             </a>
+            <p class="text-[13px] text-white/70 mt-2 text-center font-normal">Acesso imediato por apenas R$14,90</p>
         </div>
 
         <!-- CTA Section Below Player (Dynamically revealed when paused) -->
@@ -830,6 +831,7 @@ export default function App() {
             >
                 \${offer1}
             </a>
+            <p class="text-[13px] text-white/70 mt-2 text-center font-normal">Acesso imediato por apenas R$14,90</p>
             <p class="text-[10px] text-gray-500 uppercase tracking-widest mt-3 text-center mb-6">Acesso vitalício imediato via e-mail</p>
         </div>
 
@@ -1273,13 +1275,14 @@ export default function App() {
           >
             <span>Quero ver o filme completo agora</span>
           </a>
+          <p className="text-[13px] text-white/70 mt-2 text-center font-normal">Acesso imediato por apenas R$14,90</p>
         </div>
 
         {/* Dynamic CTA Below Player in React */}
         <div 
           className={`w-full flex flex-col items-center justify-center transition-all duration-500 overflow-hidden ${
             showOverlay 
-              ? 'max-h-[200px] opacity-100 mt-4 mb-6 pointer-events-auto' 
+              ? 'max-h-[250px] opacity-100 mt-4 mb-6 pointer-events-auto' 
               : 'max-h-0 opacity-0 pointer-events-none'
           }`}
         >
@@ -1296,6 +1299,7 @@ export default function App() {
           >
             <span>{offer1}</span>
           </a>
+          <p className="text-[13px] text-white/70 mt-2 text-center font-normal">Acesso imediato por apenas R$14,90</p>
           <p className="text-[10px] text-gray-500 uppercase tracking-widest mt-3 text-center">Acesso vitalício imediato via e-mail</p>
         </div>
 

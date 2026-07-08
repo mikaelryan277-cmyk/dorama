@@ -170,6 +170,7 @@
             >
                 Quero ver o filme completo agora
             </a>
+            <p class="text-[13px] text-white/70 mt-2 text-center font-normal">Acesso imediato por apenas R$14,90</p>
         </div>
 
         <!-- CTA Section Below Player -->
@@ -185,6 +186,7 @@
             >
                 Preciso ver o final agora
             </a>
+            <p class="text-[13px] text-white/70 mt-2 text-center font-normal">Acesso imediato por apenas R$14,90</p>
             <p class="text-[10px] text-gray-500 uppercase tracking-widest mt-3 text-center mb-6">Acesso vitalício imediato via e-mail</p>
         </div>
 
@@ -302,7 +304,7 @@
             const ctaBelow = document.getElementById('ctaBelowPlayer');
             if (ctaBelow) {
                 ctaBelow.classList.remove('max-h-0', 'opacity-0', 'pointer-events-none');
-                ctaBelow.classList.add('max-h-[200px]', 'opacity-100', 'pointer-events-auto', 'mb-6');
+                ctaBelow.classList.add('max-h-[250px]', 'opacity-100', 'pointer-events-auto', 'mb-6');
             }
 
             if (playerInstance && typeof playerInstance.pauseVideo === 'function') {
