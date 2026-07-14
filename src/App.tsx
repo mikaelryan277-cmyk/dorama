@@ -825,7 +825,7 @@ export default function App() {
                 <div class="space-y-4">
                     <!-- Comment 1 -->
                     <div class="flex gap-3 items-start">
-                        <img src="/images/ana_paula_avatar_1783988424055.jpg" alt="Ana Paula" class="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" referrerPolicy="no-referrer">
+                        <img src="https://i.imgur.com/lf7bcWe.png" alt="Ana Paula" class="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" referrerPolicy="no-referrer">
                         <div class="flex flex-col">
                             <p class="text-[11px] text-gray-400 font-semibold mb-0.5">Ana Paula, SP</p>
                             <p class="text-[12px] text-gray-200 leading-snug italic">Eu fui assistir só o começo e não consegui parar. Precisei comprar na hora pra ver o final!</p>
@@ -834,7 +834,7 @@ export default function App() {
                     
                     <!-- Comment 2 -->
                     <div class="flex gap-3 items-start border-t border-white/5 pt-4">
-                        <img src="/images/fernanda_avatar_1783988433114.jpg" alt="Fernanda" class="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" referrerPolicy="no-referrer">
+                        <img src="https://i.imgur.com/vDZZaqx.png" alt="Fernanda" class="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" referrerPolicy="no-referrer">
                         <div class="flex flex-col">
                             <p class="text-[11px] text-gray-400 font-semibold mb-0.5">Fernanda, RJ</p>
                             <p class="text-[12px] text-gray-200 leading-snug italic">Esse dorama me pegou demais. O final é surreal, não esperava isso 😭❤️</p>
@@ -843,7 +843,7 @@ export default function App() {
                     
                     <!-- Comment 3 -->
                     <div class="flex gap-3 items-start border-t border-white/5 pt-4">
-                        <img src="/images/camila_avatar_1783988442657.jpg" alt="Camila" class="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" referrerPolicy="no-referrer">
+                        <img src="https://i.imgur.com/jygZcmL.png" alt="Camila" class="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" referrerPolicy="no-referrer">
                         <div class="flex flex-col">
                             <p class="text-[11px] text-gray-400 font-semibold mb-0.5">Camila, MG</p>
                             <p class="text-[12px] text-gray-200 leading-snug italic">Minha amiga me mandou e eu assisti tudo de uma vez. Vale cada centavo!</p>
@@ -1319,7 +1319,7 @@ export default function App() {
               {/* Comment 1 */}
               <div className="flex gap-3 items-start">
                 <img 
-                  src="/images/ana_paula_avatar_1783988424055.jpg" 
+                  src="https://i.imgur.com/lf7bcWe.png" 
                   alt="Ana Paula" 
                   className="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" 
                   referrerPolicy="no-referrer"
@@ -1333,7 +1333,7 @@ export default function App() {
               {/* Comment 2 */}
               <div className="flex gap-3 items-start border-t border-white/5 pt-4">
                 <img 
-                  src="/images/fernanda_avatar_1783988433114.jpg" 
+                  src="https://i.imgur.com/vDZZaqx.png" 
                   alt="Fernanda" 
                   className="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" 
                   referrerPolicy="no-referrer"
@@ -1347,7 +1347,7 @@ export default function App() {
               {/* Comment 3 */}
               <div className="flex gap-3 items-start border-t border-white/5 pt-4">
                 <img 
-                  src="/images/camila_avatar_1783988442657.jpg" 
+                  src="https://i.imgur.com/jygZcmL.png" 
                   alt="Camila" 
                   className="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" 
                   referrerPolicy="no-referrer"
