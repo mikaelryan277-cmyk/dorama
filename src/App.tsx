@@ -815,6 +815,44 @@ export default function App() {
             </div>
         </div>
 
+        <!-- Social Proof Section -->
+        <div class="w-full flex flex-col items-center justify-center mt-12 mb-2 px-4">
+            <div class="w-full max-w-[380px] p-6 bg-white/5 border border-white/10 rounded-2xl shadow-2xl">
+                <p class="text-[11px] md:text-xs text-[#D4AF37] font-bold mb-5 uppercase tracking-widest text-center">
+                    🔥 +1.200 mulheres já assistiram essa semana
+                </p>
+                
+                <div class="space-y-4">
+                    <!-- Comment 1 -->
+                    <div class="flex gap-3 items-start">
+                        <img src="/src/assets/images/ana_paula_avatar_1783988424055.jpg" alt="Ana Paula" class="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" referrerPolicy="no-referrer">
+                        <div class="flex flex-col">
+                            <p class="text-[11px] text-gray-400 font-semibold mb-0.5">Ana Paula, SP</p>
+                            <p class="text-[12px] text-gray-200 leading-snug italic">Eu fui assistir só o começo e não consegui parar. Precisei comprar na hora pra ver o final!</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Comment 2 -->
+                    <div class="flex gap-3 items-start border-t border-white/5 pt-4">
+                        <img src="/src/assets/images/fernanda_avatar_1783988433114.jpg" alt="Fernanda" class="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" referrerPolicy="no-referrer">
+                        <div class="flex flex-col">
+                            <p class="text-[11px] text-gray-400 font-semibold mb-0.5">Fernanda, RJ</p>
+                            <p class="text-[12px] text-gray-200 leading-snug italic">Esse dorama me pegou demais. O final é surreal, não esperava isso 😭❤️</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Comment 3 -->
+                    <div class="flex gap-3 items-start border-t border-white/5 pt-4">
+                        <img src="/src/assets/images/camila_avatar_1783988442657.jpg" alt="Camila" class="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" referrerPolicy="no-referrer">
+                        <div class="flex flex-col">
+                            <p class="text-[11px] text-gray-400 font-semibold mb-0.5">Camila, MG</p>
+                            <p class="text-[12px] text-gray-200 leading-snug italic">Minha amiga me mandou e eu assisti tudo de uma vez. Vale cada centavo!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Fixed CTA (Visible from the start) -->
         <div id="ctaFixed" class="w-full flex flex-col items-center justify-center mt-6 z-20">
             <a 
@@ -1267,6 +1305,59 @@ export default function App() {
             <p className="text-gray-300 text-xs md:text-sm max-w-[420px] leading-relaxed">
               Quem para aqui nunca descobre o que aconteceu com Susu. Você vai deixar assim?
             </p>
+          </div>
+        </div>
+
+        {/* Social Proof Section */}
+        <div className="w-full flex flex-col items-center justify-center mt-12 mb-2 px-4">
+          <div className="w-full max-w-[380px] p-6 bg-white/5 border border-white/10 rounded-2xl shadow-2xl">
+            <p className="text-[11px] md:text-xs text-[#D4AF37] font-bold mb-5 uppercase tracking-widest text-center">
+              🔥 +1.200 mulheres já assistiram essa semana
+            </p>
+            
+            <div className="space-y-4">
+              {/* Comment 1 */}
+              <div className="flex gap-3 items-start">
+                <img 
+                  src="/src/assets/images/ana_paula_avatar_1783988424055.jpg" 
+                  alt="Ana Paula" 
+                  className="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" 
+                  referrerPolicy="no-referrer"
+                />
+                <div className="flex flex-col">
+                  <p className="text-[11px] text-gray-400 font-semibold mb-0.5">Ana Paula, SP</p>
+                  <p className="text-[12px] text-gray-200 leading-snug italic">Eu fui assistir só o começo e não consegui parar. Precisei comprar na hora pra ver o final!</p>
+                </div>
+              </div>
+              
+              {/* Comment 2 */}
+              <div className="flex gap-3 items-start border-t border-white/5 pt-4">
+                <img 
+                  src="/src/assets/images/fernanda_avatar_1783988433114.jpg" 
+                  alt="Fernanda" 
+                  className="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" 
+                  referrerPolicy="no-referrer"
+                />
+                <div className="flex flex-col">
+                  <p className="text-[11px] text-gray-400 font-semibold mb-0.5">Fernanda, RJ</p>
+                  <p className="text-[12px] text-gray-200 leading-snug italic">Esse dorama me pegou demais. O final é surreal, não esperava isso 😭❤️</p>
+                </div>
+              </div>
+              
+              {/* Comment 3 */}
+              <div className="flex gap-3 items-start border-t border-white/5 pt-4">
+                <img 
+                  src="/src/assets/images/camila_avatar_1783988442657.jpg" 
+                  alt="Camila" 
+                  className="w-8 h-8 rounded-full flex-shrink-0 object-cover shadow-sm" 
+                  referrerPolicy="no-referrer"
+                />
+                <div className="flex flex-col">
+                  <p className="text-[11px] text-gray-400 font-semibold mb-0.5">Camila, MG</p>
+                  <p className="text-[12px] text-gray-200 leading-snug italic">Minha amiga me mandou e eu assisti tudo de uma vez. Vale cada centavo!</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
